@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kho bạc nhà nước Việt Nam</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <link href="Publishing_Resources/css/Roboto/rotobo.css" rel="stylesheet" />
+    <link href="Publishing_Resources/css/reset.css" rel="stylesheet" />
+    <link href="Publishing_Resources/css/Styles.css" rel="stylesheet" />
+    <link href="Publishing_Resources/css/respon.css" rel="stylesheet" />
+    <link href="Publishing_Resources/css/slider.css" rel="stylesheet" />
+    <link href="Publishing_Resources/css/styles-mmmenu.css" rel="stylesheet" />
+    <link href="Publishing_Resources/js/plugins/mmenu/dist/core/css/jquery.mmenu.all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Publishing_Resources/js/plugins/carouselengine/initcarousel-1.css">
+
+    <script src="Publishing_Resources/js/plugins/featured-content-slider/jquery-1.8.2.js"></script>
+    <script src="Publishing_Resources/js/plugins/featured-content-slider/jquery-ui-1.9.0.custom.min.js"></script>
+    <script src="Publishing_Resources/js/plugins/featured-content-slider/jquery-ui-tabs-rotate.js"></script>
+    <script src="Publishing_Resources/js/script-mmmenu.js"></script>
+    <script src="Publishing_Resources/js/plugins/mmenu/dist/core/js/jquery.mmenu.min.all.js"></script>
+    <!-- Insert to your webpage before the </head> -->
+    <script src="Publishing_Resources/js/plugins/carouselengine/amazingcarousel.js"></script>
+    <script src="Publishing_Resources/js/plugins/carouselengine/initcarousel-1.js"></script>
+    <!-- End of head section HTML codes -->
+    <script type="text/javascript">
+        $(function () {
+            $('nav#menu').mmenu({
+                extensions: ['effect-slide-menu', 'pageshadow', 'pagedim-black'],
+                searchfield: true,
+                counters: true,
+                navbar: {
+                    title: 'Danh mục'
+                },
+                navbars: [
+                    {
+                        position: 'top',
+                        content: ['searchfield']
+                    }, {
+                        position: 'top',
+                        content: [
+                            'prev',
+                            'title',
+                            'close'
+                        ]
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({ fx: { opacity: "toggle" } }).tabs("rotate", 5000, true);
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            function refrClock() {
+                var d = new Date();
+                var day = d.getDay();
+                var date = d.getDate();
+                var month = d.getMonth();
+                var year = d.getFullYear();
+                var days = new Array("Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bẩy");
+                var months = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"); var am_pm;
+                document.getElementById("clock").innerHTML = days[day] + ", " + date + "/" + months[month] + "/" + year; setTimeout("refrClock()", 1000);
+            }
+            refrClock();
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="header-site">
+                <div class="logo">
+                    <a href="#">
+                        <img src="Publishing_Resources/images/logo.png" />
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <div class="top-menu">
+                        <ul>
+                            <li id="clock"></li>
+                        </ul>
+                    </div>
+                    <div class="box-search">
+                        <form>
+                            <input type="text" name="search" id="search" class="bg-search" placeholder="Tìm kiếm" />
+                        </form>
+                        <div class="link-top">
+                            <ul>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Hỏi đáp</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="fullmenu">
+            <div class="menumobile">
+                <div class="header-menu-mobile">
+                    <a href="#menu"></a>
+                    <img src="Publishing_Resources/images/logo.png" />
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li class=""><a title="" href="#">Trang chủ</a></li>
+                        <li class="">
+                            <a title="" href="#">Giới thiệu</a>
+                            <ul>
+                                <li>
+                                    <a href="#" title="">Lãnh đạo bộ</a>
+                                    <ul>
+                                        <li><a href="#">Lãnh đạo bộ đương nhiệm</a></li>
+                                        <li><a href="#">Lãnh đạo bộ qua các thời kỳ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" title="">Thông tin từ trường</a></li>
+                                <li><a href="#" title="">Cựu sinh viên</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a title="" href="#">Tin tức - Sự kiện</a>
+                            <ul>
+                                <li>
+                                    <a href="#about">Hoạt động lực lượng công an</a>
+                                    <ul>
+                                        <li><a href="#" title="">Hoạt động của bộ</a></li>
+                                        <li><a href="#" title="">Hoạt động ở địa phương</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" title="">Chỉ đạo điều hành</a></li>
+                                <li><a href="#" title="">Đối ngoại</a></li>
+                                <li><a href="#" title="">Người tốt việc tốt</a></li>
+                                <li><a href="#" title="">Tin An ninh - Trật tự</a></li>
+                                <li><a href="#" title="">Hoạt động xã hội</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#about">Văn bản</a>
+                            <ul>
+                                <li><a href="#" title="">Hệ thống Văn bản</a></li>
+                                <li><a href="#" title="">Giới thiệu, hướng dẫn VBQPPL</a></li>
+                                <li><a href="#" title="">Lấy ý kiến về dự thảo Văn bản</a></li>
+                                <li><a href="#" title="">CSDL Quốc gia về PL</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#about">Dịch vụ công</a>
+                        </li>
+                        <li class="">
+                            <a title="" href="#">Bộ với công dân</a>
+                            <ul>
+                                <li><a href="#">Công dân hỏi Bộ trả lời</a></li>
+                                <li><a href="#">Hiến kế Bộ trưởng</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="cssmenu">
+                <ul>
+                    <li class="active"><a href="/"><span>Trang chủ</span></a></li>
+                    <li class="has-sub">
+                        <a href="#"><span>Giới thiệu</span></a>
+                        <ul>
+                            <li class="has-sub">
+                                <a href="#">
+                                    <span>Giới thiệu1</span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>Giới thiệu11</span></a></li>
+                                    <li class="last"><a href="#"><span>Giới thiệu12</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Giới thiệu2</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="News.html"><span>Nghiệp vụ</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>Tin tức</span></a>
+                    </li>
+                    <li><a href="#"><span>Thư viện</span></a></li>
+                    <li><a href="#"><span>Hướng dẫn</span></a></li>
+                    <li>
+                        <a href="#"><span>Diễn đàn</span></a>
+                    </li>
+                    <li class="account"><span>Nguyễn Văn A</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fullcontent">
+            <!--su kien-->
+            <div class="event">
+                <div class="title-event">Dòng sự kiện</div>
+                <div class="lts-dongsukien">
+                    <ul>
+                        <li><a href="#">Kho bạc Nhà nước Hậu Giang được công nhận là đơn vị dẫn đầu về phát triển và ứng dụng...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--end su kien-->
+            <div class="fullcontainer">
+                <!--left-->
+                <div class="full-left ">
+                    <div class="slider-new">
+                        <a href="#"><img src="Upload/imgslider.png" /></a>
+                        <h1><a href="#">Đoàn công tác Kho bạc Nhà nước Việt Nam kết thúc tốt đẹp chuyến thăm và làm việc với Bộ Tài chính Hoa Kỳ</a></h1>
+                        <div class="lts-hottop">
+                            <div class="top4">
+                                <a href="#">
+                                    <img src="Upload/anhhoatdong2.png" />
+                                    <h2>Nghiêm thu đề tài khoa học nghiên cứu về bảo mật dữ liệu thông tin</h2>
+                                </a>
+                            </div>
+                            <div class="top4">
+                                <a href="#">
+                                    <img src="Upload/anhhoatdong2.png" />
+                                    <h2>Nghiêm thu đề tài khoa học nghiên cứu về bảo mật dữ liệu thông tin</h2>
+                                </a>
+                            </div>
+                            <div class="top4">
+                                <a href="#">
+                                    <img src="Upload/anhhoatdong2.png" />
+                                    <h2>Nghiêm thu đề tài khoa học nghiên cứu về bảo mật dữ liệu thông tin</h2>
+                                </a>
+                            </div>
+                            <div class="top4">
+                                <a href="#">
+                                    <img src="Upload/anhhoatdong2.png" />
+                                    <h2>Nghiêm thu đề tài khoa học nghiên cứu về bảo mật dữ liệu thông tin</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-lienket">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="Upload/img/qcl1.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="Upload/img/qcl2.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Upload/Togiactoipham.png">
+                                    <img src="Upload/img/qcl3.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-left-home">
+                        <div class="head-cm">
+                            <ul>
+                                <li><a href="#">Thông báo cơ quan</a></li>
+                                <li><a href="#">Thông báo đơn vị</a></li>
+                            </ul>
+                            <a href="#" class="xemthem">Xem tất cả</a>
+                        </div>
+                        <div class="ltstop2">
+                            <div class="thongbaof1">
+                                <div class="lts-thongbaof1">
+                                    <div class="boxtime"><span>15/11</span><span>2018</span></div>
+                                    <a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a>
+                                </div>
+                                <div class="lts-thongbaof1">
+                                    <div class="boxtime"><span>15/11</span><span>2018</span></div>
+                                    <a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a>
+                                </div>
+                                <div class="lts-thongbaof1">
+                                    <div class="boxtime"><span>15/11</span><span>2018</span></div>
+                                    <a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a>
+                                </div>
+                                <div class="lts-thongbaof1">
+                                    <div class="boxtime"><span>15/11</span><span>2018</span></div>
+                                    <a href="#">Công văn 5585/KBNN TCCB V/v cử cán bộ tham gia dự tuyển Chương trnihf mời các nhà lãnh đạo trẻ năm 2019</a>
+                                </div>
+                                <div class="lts-thongbaof1">
+                                    <div class="boxtime"><span>15/11</span><span>2018</span></div>
+                                    <a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a>
+                                </div>
+                            </div>
+                            <div class="thongbaof2">
+                                <ul>
+                                    <li><a href="#">Lịch lãnh đạo</a></li>
+                                    <li><a href="#">Kế hoạch công tác</a></li>
+                                    <li><a href="#">Tài liệu làm việc chung</a></li>
+                                    <li><a href="#">Công tác Đảng - Đoàn thể</a></li>
+                                    <li><a href="#">Đoàn thanh niên</a></li>
+                                    <li><a href="#">Cựu chiến binh</a></li>
+                                    <li><a href="#">Phụ nữ</a></li>
+                                    <li><a href="#">Công tác nghiên cứu khoa học</a></li>
+                                    <li><a href="#">Lịch phòng họp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-left-home">
+                        <div class="head-cm">
+                            <ul>
+                                <li><a href="#">Tin tức kho bạc nhà nước</a></li>
+                                <li><a href="#">Tin ngành tài chính</a></li>
+                                <li><a href="#">Thời sự tổng hợp</a></li>
+                                <li><a href="#">Chuyên mục</a></li>
+                            </ul>
+                        </div>
+                        <div class="ltstop2">
+                            <div class="newf11">
+                                <a href="#"><img src="Upload/tinkhobac.png" /></a>
+                                <h2><a href="#">Điều hành giá bám sát thực tiễn, tăng tính dự báo, chủ động</a></h2>
+                            </div>
+                            <div class="newf22">
+                                <div class="newf22-0">
+                                    <a href="#">
+                                        <img src="Upload/tinkhobac2.png" />
+                                        Bộ trưởng Đinh Tiến Dũng: Bộ Tài chính sẽ tiếp tục đẩy mạnh cải cách hành chính, đáp ứng yêu cầu hội nhập
+                                    </a>
+                                </div>
+                                <div class="newf22-0">
+                                    <a href="#">
+                                        <img src="Upload/tinkhobac2.png" />
+                                        Bộ trưởng Đinh Tiến Dũng: Bộ Tài chính sẽ tiếp tục đẩy mạnh cải cách hành chính, đáp ứng yêu cầu hội nhập
+                                    </a>
+                                </div>
+                                <div class="newf22-0">
+                                    <a href="#">
+                                        <img src="Upload/tinkhobac2.png" />
+                                        Bộ trưởng Đinh Tiến Dũng: Bộ Tài chính sẽ tiếp tục đẩy mạnh cải cách hành chính, đáp ứng yêu cầu hội nhập
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-left">
+                        <a href="#">
+                            <img src="Upload/bannerleft2.png" />
+                        </a>
+                    </div>
+                    <div class="box-left-home">
+                        <div class="head-cm">
+                            <ul><li><a href="#">Tin tức địa phương</a></li></ul>
+                            <a href="#" class="xemthem">Xem tất cả</a>
+                        </div>
+                        <div class="ltstop2">
+                            <div class="newf1">
+                                <h2><a href="#">Điều hành giá bám sát thực tiễn, tăng tính dự báo, chủ động</a></h2>
+                                <a href="#"><img src="Upload/demotin1.png" /></a>
+                                <p>
+                                    Ngày 25/10/2018, Bộ trưởng Bộ Tài chính Đinh Tiến Dũng - Phó trưởng ban Chỉ đạo điều hành giá đã ký ban hành thông báo số 717/TB-BCĐĐHG thông báo kết luận...
+                                </p>
+                            </div>
+                            <div class="newf2">
+                                <div class="newf2-0">
+                                    <a href="#">
+                                        <img src="Upload/demotin2.png" />
+                                        Bộ trưởng Đinh Tiến Dũng: Bộ Tài chính sẽ tiếp tục đẩy mạnh cải cách hành chính, đáp ứng yêu cầu hội nhập
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li><a href="#"> Bộ Tài chính 6 năm liên tiếp giữ vị trí số 1 trong Vietnam ICT Index <span>(30/08/2018)</span></a> </li>
+                                    <li><a href="#"> Bộ Tài chính 6 năm liên tiếp giữ vị trí số 1 trong Vietnam ICT Index <span>(30/08/2018)</span></a> </li>
+                                    <li><a href="#"> Bộ Tài chính 6 năm liên tiếp giữ vị trí số 1 trong Vietnam ICT Index <span>(30/08/2018)</span></a> </li>
+                                    <li><a href="#"> Bộ Tài chính 6 năm liên tiếp giữ vị trí số 1 trong Vietnam ICT Index <span>(30/08/2018)</span></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-left">
+                        <a href="#">
+                            <img src="Upload/bannerleft1.png" />
+                        </a>
+                    </div>
+                    <div class="box-left-home">
+                        <div class="head-cm">
+                            <ul>
+                                <li><a href="#">Chuyên đề nghiệp vụ</a></li>
+                            </ul>
+                            <a href="#" class="xemthem">Xem tất cả</a>
+                        </div>
+                        <div class="linknhanh">
+                            <ul>
+                                <li><a href="#">Văn bản pháp luật</a> </li>
+                                <li><a href="#">Biểu mẫu nghiệp vụ</a> </li>
+                                <li><a href="#">Tài liệu tham khảo</a> </li>
+                            </ul>
+                        </div>
+                        <div class="lts-bovoicongdan">
+                            <ul>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                                <li>
+                                    <h2><a href="#">09/2015/TT-NHNN</a></h2>
+                                    <p>Quy định về hoạt động mua, bán nợ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end left-->
+                <!--right-->
+                <div class="full-right ">
+                    <div class="box-right">
+                        <div class="head-box-right i-thongbao"><a href="#">Thông báo</a></div>
+                        <div class="box-dvc">
+                            <ul>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                                <li><a href="#">Giấy mời lưu hành quyết định bổ nhiệm công chức lãnh đạo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="link-banner">
+                        <ul>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/edoc.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/tapchi.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/diendan.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box-right fix-caicach">
+                        <div class="head-box-right i-caicach"><a href="#">Cải cách hành chính</a></div>
+                        <div class="lts-caicach">
+                            <ul>
+                                <li><a href="#"><div><img src="Upload/img/c1.png" /></div>Bộ thủ tục hành chính</a></li>
+                                <li><a href="#"><div><img src="Upload/img/c2.png" /></div>Phổ biến giáo dục pháp luật</a> </li>
+                                <li><a href="#"><div><img src="Upload/img/c3.png" /></div>Danh bạ nội bộ</a> </li>
+                                <li><a href="#"><div><img src="Upload/img/c4.png" /></div>Sáng kiến, ý tưởng</a></li>
+                                <li><a href="#"><div><img src="Upload/img/c5.png" /></div>Tọa đàm, trao đổi với lãnh đạo KB</a></li>
+                                <li><a href="#"><div><img src="Upload/img/c6.png" /></div>Ý kiến phản ảnh</a></li>
+                                <li><a href="#"><div><img src="Upload/img/c7.png" /></div>Thăm dò ý kiến</a></li>
+                                <li><a href="#"><div><img src="Upload/img/c8.png" /></div>Lấy ý kiến về dự thảo văn bản</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="head-box-right i-video"><a href="#">media</a></div>
+                        <div class="top0video">
+                            <img src="Upload/video.png" style="width:100%" />
+                            <h3>Tăng hiệu quả quản lý ngân quỹ nhờ quản lý tập trung</h3>
+                        </div>
+                        <div class="lts-video">
+                            <ul>
+                                <li><a href="#">Bộ Công an kỷ niệm Ngày Nhà giáo Việt Nam 20/11</a></li>
+                                <li><a href="#">Bộ trưởng Tô Lâm tiếp Đại sứ Iran, Palestine và Qatar tại Việt Nam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="head-box-right i-lienketcong"><a href="#">Liên kết cổng</a></div>
+                        <div class="lts-lienket">
+                            <ul>
+                                <li><a href="#">Đảng cộng sản Việt Nam</a></li>
+                                <li><a href="#">Quốc hội</a></li>
+                                <li><a href="#">Chính phủ</a></li>
+                                <li><a href="#">Bộ tài chính</a></li>
+                                <li><a href="#">Cổng TTĐT - KBNN Internet</a></li>
+                                <li><a href="#">Tổng cục thuế</a></li>
+                                <li><a href="#">Hải quan</a></li>
+                                <li><a href="#">Tạp chí Tin học tài chính</a></li>
+                                <li><a href="#">Tra cứu thông báo KBTW</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="head-box-right i-lienketnhanh"><a href="#">Liên kết nhanh</a></div>
+                        <div class="lts-lienketnhanh">
+                            <ul>
+                                <li><div><img src="Upload/img/lk1.png" /></div><a href="#">Lịch lãnh đạo</a></li>
+                                <li><div><img src="Upload/img/lk2.png" /></div><a href="#">Kế hoạch công tác</a></li>
+                                <li><div><img src="Upload/img/lk3.png" /></div><a href="#">Tàu liệu làm việc chung</a></li>
+                                <li><div><img src="Upload/img/lk4.png" /></div><a href="#">Công tác Đảng - Đoàn thể</a></li>
+                                <li><div><img src="Upload/img/lk5.png" /></div><a href="#">Theo dõi thi đua</a></li>
+                                <li><div><img src="Upload/img/lk6.png" /></div><a href="#">Chấm công</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="link-banner">
+                        <ul>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/chungkhoan.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/thoitiet.png" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="" target="_blank">
+                                    <img src="Upload/tygia.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end right-->
+            </div>
+            <div class="fullcontainer">
+                <div class="box-hinhanh">
+                    <div class="footer-lienket"><a href="#">Hình ảnh hoạt động</a></div>
+                    <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;margin:0px auto 0px;">
+                        <div class="amazingcarousel-list-container">
+                            <ul class="amazingcarousel-list">
+                                <li class="amazingcarousel-item">
+                                    <div class="amazingcarousel-item-container">
+                                        <div class="amazingcarousel-image">
+                                            <a href="#" title="AnNinhTV">
+                                                <img src="Upload/anhhoatdong1.png" alt="AnNinhTV" />
+                                            </a>
+                                        </div>
+                                        <a href="#" class="title-album">Hình ảnh hoạt động của Kho bạc Nhà nước Việt Nam</a>
+                                    </div>
+                                </li>
+                                <li class="amazingcarousel-item">
+                                    <div class="amazingcarousel-item-container">
+                                        <div class="amazingcarousel-image">
+                                            <a href="#" title="ChinhPhu">
+                                                <img src="Upload/anhhoatdong2.png" alt="ChinhPhu" />
+                                            </a>
+                                        </div>
+                                        <a href="#" class="title-album">Hình ảnh hoạt động của Kho bạc Nhà nước Việt Nam</a>
+                                    </div>
+                                </li>
+                                <li class="amazingcarousel-item">
+                                    <div class="amazingcarousel-item-container">
+                                        <div class="amazingcarousel-image">
+                                            <a href="#" title="CongAnND">
+                                                <img src="Upload/anhhoatdong3.png" alt="CongAnND" />
+                                            </a>
+                                        </div>
+                                        <a href="#" class="title-album">Hình ảnh hoạt động của Kho bạc Nhà nước Việt Nam</a>
+                                    </div>
+                                </li>
+                                <li class="amazingcarousel-item">
+                                    <div class="amazingcarousel-item-container">
+                                        <div class="amazingcarousel-image">
+                                            <a href="#" title="HocVienAnNinh">
+                                                <img src="Upload/anhhoatdong3.png" alt="HocVienAnNinh" />
+                                            </a>
+                                        </div>
+                                        <a href="#" class="title-album">Hình ảnh hoạt động của Kho bạc Nhà nước Việt Nam</a>
+                                    </div>
+                                </li>
+                                <li class="amazingcarousel-item">
+                                    <div class="amazingcarousel-item-container">
+                                        <div class="amazingcarousel-image">
+                                            <a href="#" title="HocVienAnNinh">
+                                                <img src="Upload/anhhoatdong3.png" alt="HocVienAnNinh" />
+                                            </a>
+                                        </div>
+                                        <a href="#" class="title-album">Hình ảnh hoạt động của Kho bạc Nhà nước Việt Nam</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="amazingcarousel-prev"></div>
+                            <div class="amazingcarousel-next"></div>
+                        </div>
+                        <div class="amazingcarousel-nav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="topfooter">
+            <div class="menu-footer">
+                <ul class="menu">
+                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">NGHIỆP VỤ</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">THƯ VIỆN</a></li>
+                    <li><a href="#">HƯỚNG DẪN</a></li>
+                    <li><a href="#">DIỄN ĐÀN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomfooter">
+            <div class="content1060">
+                <div class="logofooter"><img src="Publishing_Resources/images/logo-footer.png" /> </div>
+                <div class="addressfooter">Địa chỉ: 32 Cát Linh - Đống Đa - Hà Nội<br />Điện thoại: 04 62 764 300</div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="info">
+                © 2015 - 2019 - Kho bạc nhà nước Việt Nam
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
